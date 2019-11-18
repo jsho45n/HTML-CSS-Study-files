@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>실습문제 1-1</title>
+</head>
+<body>
+    <H3>라면을 끓이는 순서</H3>
+    <hr>
+    <ol type="A">
+        <li>물을 끓인다.</li>
+        <li>라면과 스프를 넣는다</li>
+        <li>파를 썰어 넣는다</li>
+        <li>5분 후 <strong>맛있게</strong>먹는다</li>
+    </ol>
+    <script>
+        var liArray = document.getElementsByTagName("li");
+        for(var i = 0; i < liArray.length; i++){
+            var obj = liArray[i];
+            obj.style.color = "green";
+        }
+
+    </script>
+</body>
+</html>

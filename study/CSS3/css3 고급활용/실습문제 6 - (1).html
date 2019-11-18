@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>실습문제 6-1</title>
+        <style>
+        @keyframes imageAnimation {
+            from { transform : rotate(0deg);}
+            to { transform : rotate(360deg);}
+        }
+        #image {
+            animation-name: imageAnimation;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+       
+        </style>
+    </head>
+    <body>
+        <h3>어지러워요</h3>
+        <hr>
+        <img id="image" src="1.jpg">
+    </body>
+</html>

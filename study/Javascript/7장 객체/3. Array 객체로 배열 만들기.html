@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array 객체로 배열 만들기</title>
+    </head>
+    <body>
+        <h3>Array 객체로 배열 만들기</h3>
+        <hr>
+        <script>
+        var degrees = new Array(); //빈 배열 생성
+        degrees[0] = 15.1;
+        degrees[1] = 15.4;
+        degrees[2] = 16.1;
+        degrees[3] = 17.5;
+        degrees[4] = 19.2;
+        degrees[5] = 21.4;
+
+        var sum = 0;
+        for(i=0; i<degrees.length; i++) //i<degrees.length는 배열 크기만큼 루프한다는 뜻이다.
+            sum += degrees[i];
+
+        var plots = [-20, -5, 0, 15, 20];
+        var week = new Array("월", "화", "수", "목", "금", "토", "일");
+        var m = plots.length; //m은 5
+        var n = plots.length; //n은 7
+        
+        document.write("평균 온도는 " + sum/degrees.length + "<br>"); // sum/degrees.length는 배열 degrees의 크기인 6을 가리킨다.
+        </script>
+    </body>
+</html>

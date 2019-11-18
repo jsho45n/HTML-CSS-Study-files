@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>실습문제 8번</title>
+</head>
+<body>
+    <h3>16개의 랜덤한 색 만들기
+    <hr>
+    <script>
+    for(var i = 0; i < 4; ++i) {
+        for(var j = 0; j < 4; ++j) {
+            var x= Math.random() * 255;
+            x = Math.floor(x);
+            var y = Math.random() * 255;
+            y = Math.floor(y);
+            var z = Math.random() * 255;
+            z = Math.floor(z);
+            document.write("<div style='background-color : ");
+            document.write("rgb(" + x + "," + y +"," + z + " ) ' > ");
+            document.write("rgb(" + x + "," + y + "," + z + ")");
+            document.write("</div>");
+        }
+        document.write("<br>");
+    }
+    
+    </script>
+    </h3>
+</body>
+</html>

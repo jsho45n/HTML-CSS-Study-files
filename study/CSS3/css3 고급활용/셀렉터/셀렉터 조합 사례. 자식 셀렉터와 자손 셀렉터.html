@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>셀렉터 조합 사례. 자식 셀렉터와 자손 셀렉터</title>
+    </head>
+    <body>
+        <style>
+            ul strong {color: dodgerblue;} /* 자손 셀렉터 */
+            div > strong {background : yellow;} /* 자식 셀렉터 */
+            </style>
+        <h3>Web Programming</h3>
+        <hr>
+        <div>
+            <div>2학기 <strong>학습 내용</strong></div>
+            <ul>
+                <li>HTML5</li>
+                <li><strong>CSS</strong></li>
+                <li>JAVASCRIPT</li>
+            </ul>
+            <div>60점 이하는 F!</div>
+        </div>
+    </body>
+</html>

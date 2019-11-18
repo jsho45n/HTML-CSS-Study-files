@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title>select 객체에서 선택한 과일 출력</title>
+    <script>
+    function darwImage() {
+        var sel = document.getElementById("fruits");
+        var img = document.getElementById("fruitImage");
+        img.src = sel.options[sel.selectedIndex].value;
+    }
+    </script>
+</head>
+<body onload="drawImage()">
+    <h3>select 객체에서 선택한 과일 출력</h3>
+    <hr>
+    과일을 선택하면 이미지가 출력됩니다.
+    <p>
+        <form>
+            <select id="fruits" onchange="drawImage()">
+                <option value="faker.jpg">페이커</option>
+                <option value="khan.jpg">칸</option>
+                <option value="clid.jpg">클리드</option>
+            </select>
+            <img id="fruitImage" src="faker.jpg" alt="">
+        </form>
+    </p>
+</body>
+</html>
